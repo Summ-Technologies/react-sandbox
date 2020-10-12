@@ -26,6 +26,7 @@ export default function ReviewStars(props: ReviewStarsProps) {
         <img
           src={starEmpty}
           style={{ width: 18, height: 18 }}
+          key={index}
           alt={"star empty"}
         />
       ))}
