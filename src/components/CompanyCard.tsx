@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import defaultStyles from "../styles";
 import Button from "./Button";
+import LogoBox from "./LogoBox";
 import Rating from "./Rating";
 
 export default function FirstComponent() {
@@ -21,12 +22,6 @@ export default function FirstComponent() {
       paddingTop: 12,
       paddingLeft: 12,
       paddingRight: 12,
-    },
-    logoBoxContainer: {
-      width: 75,
-      height: 75,
-      ...defaultStyles.defaultBoxShadow,
-      ...defaultStyles.roundedCorners,
     },
     headerTextAndRating: {
       display: "flex",
@@ -73,7 +68,7 @@ export default function FirstComponent() {
     <div style={styles.container}>
       <Row style={styles.headerRow}>
         <Col>
-          <div style={styles.logoBoxContainer}></div>
+          <LogoBox />
         </Col>
         <Col style={{ paddingLeft: 10, flexGrow: 1 }}>
           <div style={styles.headerTextAndRating}>

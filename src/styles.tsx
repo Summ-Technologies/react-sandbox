@@ -33,6 +33,12 @@ export const header: CSSProperties = {
 };
 
 export const header2: CSSProperties = {
+  fontWeight: 600,
+  color: colors.almostBlack,
+  fontSize: "2.0em",
+};
+
+export const header3: CSSProperties = {
   fontWeight: 500,
   color: colors.almostBlack,
   fontSize: "1.1em",
