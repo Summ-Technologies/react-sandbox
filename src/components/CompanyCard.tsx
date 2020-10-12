@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import defaultStyles from "../styles";
 import Button from "./Button";
+import Rating from "./Rating";
 
 export default function FirstComponent() {
   let styles: { [key: string]: CSSProperties } = {
@@ -16,7 +17,6 @@ export default function FirstComponent() {
       ...defaultStyles.roundedCorners,
     },
     headerRow: {
-      width: "100%",
       display: "flex",
       paddingTop: 12,
       paddingLeft: 12,
@@ -29,7 +29,8 @@ export default function FirstComponent() {
       ...defaultStyles.roundedCorners,
     },
     headerTextAndRating: {
-      flexGrow: 1,
+      display: "flex",
+      justifyContent: "space-between",
     },
     companyNameText: {
       fontSize: 22,
@@ -74,9 +75,10 @@ export default function FirstComponent() {
         <Col>
           <div style={styles.logoBoxContainer}></div>
         </Col>
-        <Col style={{ paddingLeft: 10 }}>
+        <Col style={{ paddingLeft: 10, flexGrow: 1 }}>
           <div style={styles.headerTextAndRating}>
             <div style={styles.companyNameText}>Pulley</div>
+            <Rating numReviews={12} rating={4.3} />
           </div>
           <div style={styles.companyTypeText}>Cap table</div>
           <div style={styles.companyTaglineText}>
