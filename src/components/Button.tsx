@@ -26,7 +26,7 @@ export default function Button(props: ButtonProps) {
       paddingRight: 5,
     },
     hovered: {
-      textDecoration: "underline",
+      opacity: 0.7,
     },
     text: {
       paddingLeft: 5, // essentially min padding
