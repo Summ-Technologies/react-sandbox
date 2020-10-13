@@ -11,9 +11,16 @@ type FounderReviewProps = {
 
 export default function FounderReview(props: FounderReviewProps) {
   let styles: { [key: string]: CSSProperties } = {
-    container: {},
+    container: { display: "inline-block" },
     nameText: { fontWeight: "bold" },
-    dateText: { color: defaultStyles.colors.grayText, fontWeight: "bold" },
+    dateText: {
+      color: defaultStyles.colors.grayText,
+      fontWeight: 500,
+      fontSize: 14,
+      paddingTop: 4,
+      paddingBottom: 4,
+    },
+    reviewText: { paddingTop: 4, fontSize: 14 },
   };
   return (
     <div style={styles.container}>

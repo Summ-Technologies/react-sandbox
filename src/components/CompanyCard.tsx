@@ -43,6 +43,7 @@ export default function FirstComponent() {
     },
     pricingTextContainer: {
       paddingTop: 12,
+      paddingBottom: 5,
     },
     saveText: {
       color: "#75AF5A",

@@ -9,7 +9,8 @@ type ReviewStarsProps = {
 export default function ReviewStars(props: ReviewStarsProps) {
   let styles: { [key: string]: CSSProperties } = {
     container: {
-      display: "inline-block",
+      display: "flex",
+      alignItems: "center",
     },
   };
   return (
