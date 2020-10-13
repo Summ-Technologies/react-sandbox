@@ -22,7 +22,7 @@ function HomePage() {
         />
       </Row>
       <Row>
-        <Checkbox label={"butt cheeks"} checked={false} />
+        <Checkbox label={"input checkbox"} checked={false} />
       </Row>
     </Col>
   );

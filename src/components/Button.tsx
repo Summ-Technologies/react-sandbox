@@ -16,6 +16,7 @@ export default function Button(props: ButtonProps) {
       backgroundColor: defaultStyles.colors.main,
       ...defaultStyles.roundedCorners,
       height: "100%",
+      fontSize: 14,
       cursor: "pointer",
       display: "flex",
       flexDirection: "column",
