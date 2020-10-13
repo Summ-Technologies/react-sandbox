@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 
 type CheckboxProps = {
   checked: boolean;
@@ -12,21 +12,11 @@ export default function Checkbox(props: CheckboxProps) {
     setIsChecked(!isChecked);
   }
 
-  let styles: { [key: string]: CSSProperties } = {
-    text: { paddingLeft: 5 },
-    container: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-  };
   return (
-    <div style={styles.container}>
-      <span onClick={toggleCheck}>
-        <input type="checkbox" checked={isChecked} />
-        <span></span>
-        {props.label}
-      </span>
-    </div>
+    <span onClick={toggleCheck}>
+      <input type="checkbox" checked={isChecked} />
+      <span></span>
+      {props.label}
+    </span>
   );
 }

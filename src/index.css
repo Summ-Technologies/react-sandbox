@@ -29,5 +29,5 @@ input[type="checkbox"]:checked + span {
 }
 
 input[type="checkbox"] + span {
-  margin-right: 4px;
+  margin-right: 7px;
 }
